@@ -1,0 +1,54 @@
+#Takes a float x (in radians) and returns the float arcsin(x)
+.alias 0,localVar
+
+.alias 0,x
+.alias 1,x3
+.alias 2,x5
+.alias 3,x7
+.alias 4,x9
+
+begin 1,5
+
+pushVar. localVar,x
+pushVar. localVar,x
+pushVar. localVar,x
+multf.
+multf.
+floatVarSet. localVar,x3
+pushVar. localVar,x
+pushVar. localVar,x
+multf.
+multf.
+floatVarSet. localVar,x5
+pushVar. localVar,x
+pushVar. localVar,x
+multf.
+multf.
+floatVarSet. localVar,x7
+pushVar. localVar,x
+pushVar. localVar,x
+multf.
+multf.
+floatVarSet localVar,x9
+
+pushVar. localVar,x
+pushVar. localVar,x3
+pushInt. 6f
+divf.
+addf.
+pushVar. localVar,x5
+pushInt. 13.33333333333333333333333333333f
+divf.
+addf.
+pushVar. localVar,x7
+pushInt. 22.4f
+divf.
+addf.
+pushVar. localVar,x9
+pushInt. 32.914285714285714285714285714286f
+divf.
+addf.
+
+
+return_6
+end

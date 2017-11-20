@@ -1,0 +1,15 @@
+#Takes a float x (in radians) and returns the float tan(x)
+.alias 0,localVar
+.alias 0,x
+
+begin 1,1
+pushVar. localVar,x
+pushInt. sin
+callFunc 1
+pushVar. localVar,x
+pushInt. cos
+callFunc 1
+divf.
+
+return_6
+end
